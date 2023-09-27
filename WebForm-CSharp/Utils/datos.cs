@@ -402,6 +402,35 @@ namespace WebForm_CSharp.Utils
 
 
         #region Account
+
+        public string GetAccount(ref DataTable dt, string ID)
+        {
+            try
+            {
+                using (SqlConnection MyConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringSQL"].ConnectionString))
+                {
+                    MyConnection.Open();
+
+                    using (SqlCommand MyCommand = MyConnection.CreateCommand())
+                    {
+                        MyCommand.CommandText = $"SELECT username, email , pass FROM dbo.Usuarios WHERE ID = {ID} ;";
+
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(MyCommand))
+                        {
+                            adapter.Fill(dt);
+                        }
+                    }
+                }
+                return "";
+            }
+            catch (Exception es)
+            {
+                Console.WriteLine(es.Message);
+                Console.Read();
+                return "a";
+            }
+
+        }
         // Log in and Sign UP
         public string Login(ref DataTable dt, string email, string password)
         {

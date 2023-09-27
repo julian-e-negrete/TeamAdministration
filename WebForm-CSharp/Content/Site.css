@@ -125,49 +125,10 @@ a:hover{
     padding: 8px 16px;
 }
 
-#MainContent_txtTitulo{
-    background-color: #fff; /* Background color */
-    color: #000000; /* Text color */
-}
 
-#MainContent_txtTitulo:hover {
-    background-color: #fff; /* Background color */
-}
 
-#MainContent_txtDescripcion{
-    background-color: #fff; /* Background color */
-    color: #000000; /* Text color */
-}
 
-#MainContent_txtDescripcion:hover {
-    background-color: #fff; /* Background color */
-}
 
-#MainContent_TextBox0{
-    background-color: #fff; /* Background color */
-    color: #000000; /* Text color */
-}
-#MainContent_TextBox0:hover{
-    background-color: #fff; /* Background color */
-}
-
-#MainContent_TextBox1{
-    background-color: #fff; /* Background color */
-    color: #000000; /* Text color */
-}
-
-#MainContent_TextBox1:hover{
-    background-color: #fff; /* Background color */
-}
-
-#MainContent_TextBox2{
-    background-color: #fff; /* Background color */
-    color: #000000; /* Text color */
-}
-
-#MainContent_TextBox2:hover{
-    background-color: #fff; /* Background color */
-}
 
 #Button2{
     display: inline-block;
@@ -200,4 +161,36 @@ a:hover{
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     
+}
+
+/* Style for the <a> tag */
+#A1{
+    /* Add any styles you want for the link */
+    text-decoration: none;
+    color: #000;
+    display: inline-block; /* Display as a block-level element */
+}
+
+/* Style for the <img> tag */
+#A1 img {
+    /* Add any styles you want for the image */
+    width: 20px; /* Set a fixed width for the image */
+    height: 20px; /* Set a fixed height for the image */
+    margin-right: 5px; /* Add spacing to the right of the image */
+    filter: invert(1);
+}
+
+
+.account {
+    display: flex;
+    gap: 16px;
+}
+
+input .form-control {
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+}
+
+input .form-control:hover {
+    background-color: #fff; /* Background color */
 }

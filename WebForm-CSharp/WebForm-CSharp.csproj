@@ -145,6 +145,8 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\user-regular.svg" />
+    <Content Include="img\user-solid.svg" />
     <Content Include="Tasks\CreateTask.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Tasks\Details.aspx" />

@@ -1,6 +1,32 @@
 ﻿<%@ Page Title="Create Account" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="WebForm_CSharp.SignIn" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <style>
+        #MainContent_TextBox0{
+            background-color: #fff; /* Background color */
+            color: #000000; /* Text color */
+        }
+        #MainContent_TextBox0:hover{
+            background-color: #fff; /* Background color */
+        }
+        #MainContent_TextBox1{
+            background-color: #fff; /* Background color */
+            color: #000000; /* Text color */
+        }
+
+        #MainContent_TextBox1:hover{
+            background-color: #fff; /* Background color */
+        }
+
+        #MainContent_TextBox2{
+            background-color: #fff; /* Background color */
+            color: #000000; /* Text color */
+        }
+
+        #MainContent_TextBox2:hover{
+            background-color: #fff; /* Background color */
+        }
+    </style>
 
     <main>
         <div class="form-group">              

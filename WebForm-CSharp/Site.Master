@@ -57,8 +57,16 @@
                             
                         </li>
                     </ul>
+
+                <section class="account">
                 <a id ="ALogIn" class="nav-link" runat="server" CssClass="nav-item-right" href="~/Default" >Log In</a>
+
+                <a id ="A1" class="nav-link" runat="server" CssClass="nav-item-right" href="~/Account" >
+                    <img  src="../img/user-solid.svg" />
+                </a>
                 <asp:LinkButton id="ALogOut" runat="server" Text="Log out" CssClass="nav-item-right" OnClick="ALogOut_Click" />    
+                </section>
+                
                 </div>
                 
             </div>
@@ -75,5 +83,6 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder>
+
 </body>
 </html>

@@ -43,7 +43,9 @@ namespace WebForm_CSharp
                     }
                     else 
                     {
-                        string res = datosInstance.CreateTask(txtTitulo.Text.Trim(), txtDescripcion.Text.Trim(), number, number);
+                        string script = $"alert('Something went wrong, Id_user is null ');";
+                        ScriptManager.RegisterStartupScript(this, GetType(), "AlertScript", script, true);
+                        //string res = datosInstance.CreateTask(txtTitulo.Text.Trim(), txtDescripcion.Text.Trim(), number, number);
                     }
 
                     

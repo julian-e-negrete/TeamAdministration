@@ -26,6 +26,7 @@ namespace WebForm_CSharp
                 
 
                 ALogOut.Visible = true;
+                A1.Visible = true;
                 
                 
             }
@@ -35,6 +36,7 @@ namespace WebForm_CSharp
 
                 ALogIn.Visible = true;                
                 ALogOut.Visible = false;
+                A1.Visible = false;
             }
             
             if ((string)Session["Page"] == "LogIn")

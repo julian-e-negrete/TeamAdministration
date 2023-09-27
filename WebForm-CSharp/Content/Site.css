@@ -1,0 +1,203 @@
+﻿/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
+@font-face {
+    font-family: 'cattedrale-demoregular';
+    src: url('cattedrale-demo-regular.woff2') format('woff2'),
+         url('cattedrale-demo-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  h2 {
+    font-family: 'cattedrale-demoregular';
+  }
+
+
+/* Reset default list styles */
+.tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for the tab container */
+.tabs ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Style for the active tab */
+.tabs ul li.active {
+    background-color: #fff;
+    border-bottom-color: transparent;
+}
+
+/* Style for the tab content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+  /* Define a CSS style for all button elements */
+  input {
+    background-color: #505255; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove the default button border */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 4px; /* Add rounded corners if desired */
+}
+
+/* Define a style for buttons when hovered over */
+input:hover {
+    background-color: #23282e; /* Change background color on hover */
+}
+
+a{
+    color: #505255; 
+}
+  
+a:hover{
+    color:  #23282e; 
+}
+
+#divContainer a {
+    color: #fff;
+}
+
+#divContainer a:hover {
+    color: #23282e;
+}
+
+#MainContent_btnTab1 {
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+}
+
+#MainContent_btnTab1:hover {
+    background-color: #fff; /* Background color */
+}
+
+#MainContent_btnTab2{
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+
+}
+/* Define a style for buttons when hovered over */
+#MainContent_btnTab2:hover {
+    background-color: #fff; /* Background color */
+}
+
+#MainContent_btnCreTask{
+    float: right;
+    margin-right: 30px;
+    border: none;
+    padding: 8px 16px;
+}
+
+#MainContent_txtTitulo{
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+}
+
+#MainContent_txtTitulo:hover {
+    background-color: #fff; /* Background color */
+}
+
+#MainContent_txtDescripcion{
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+}
+
+#MainContent_txtDescripcion:hover {
+    background-color: #fff; /* Background color */
+}
+
+#MainContent_TextBox0{
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+}
+#MainContent_TextBox0:hover{
+    background-color: #fff; /* Background color */
+}
+
+#MainContent_TextBox1{
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+}
+
+#MainContent_TextBox1:hover{
+    background-color: #fff; /* Background color */
+}
+
+#MainContent_TextBox2{
+    background-color: #fff; /* Background color */
+    color: #000000; /* Text color */
+}
+
+#MainContent_TextBox2:hover{
+    background-color: #fff; /* Background color */
+}
+
+#Button2{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Style for right-aligned navigation items */
+.nav-item-right {
+    margin-left: auto; /* Push this item to the right */
+}
+
+.layout {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+.panel {
+    display: flex;
+    gap: 16px;
+    color: black;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+}

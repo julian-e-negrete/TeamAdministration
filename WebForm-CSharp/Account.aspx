@@ -19,6 +19,14 @@
         #MainContent_txtEmail:hover {
             background-color: #fff; /* Background color */
         }
+        #MainContent_txtpass{
+            background-color: #fff; /* Background color */
+            color: #000000; /* Text color */
+        }
+
+        #MainContent_txtpass:hover {
+            background-color: #fff; /* Background color */
+        }
     </style>
 
     <main aria-labelledby="title">
@@ -39,6 +47,14 @@
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Ingrese el mail del usuario" ReadOnly ="true"  TabIndex="4"></asp:TextBox> 
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label for="txtpass" class="col-md-2 control-label">password:</label>
+                    <div class="col-md-4">
+                            <asp:TextBox ID="txtpass" runat="server" CssClass="form-control" TabIndex="4" TextMode="Password"  ></asp:TextBox>  
+                    </div>
+                </div>
+                
             </div>
             <asp:Button ID="EditButton" runat="server" Text="Edit" OnClick="EditButton_Click" /> 
         </div>

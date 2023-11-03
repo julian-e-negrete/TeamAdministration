@@ -19,7 +19,10 @@ namespace WebForm_CSharp.Utils
 {
     public class MyBackgroundService : IHostedService
     {
-
+        public class numeros
+        {
+            public int countsms = 0;
+        }
         public class Blue
         {
             public double value_avg { get; set; }
@@ -69,15 +72,16 @@ namespace WebForm_CSharp.Utils
 
                             decimal dolarBlueValue = Convert.ToDecimal(jsonObject.blue.value_sell);
 
-                            if (dolarBlueValue >= 1000)
+                            if (dolarBlueValue <= 1000)
                             {
                                 
 
                                 // Create a dictionary of people we know, indexed by phone number.
                                 var people = new Dictionary<string, string>()
-                            {
-                                {"+541124037774", "Julian Negrete"},
-                            };
+                                {
+                                    {"+541124037774", "Julian Negrete"},
+                                    {"+541124050722", "Diego Negrete"},
+                                };
 
                                 // Iterate over all our friends.
                                 foreach (var person in people)
@@ -86,16 +90,18 @@ namespace WebForm_CSharp.Utils
                                     MessageResource.Create(
                                         from: new PhoneNumber("+16414183152"), // From number, must be an SMS-enabled Twilio number
                                         to: new PhoneNumber(person.Key), // To number, if using Sandbox see note above
-                                        body: $"Valor dolar blue $ !"
+                                        body: $"Valor dolar blue ${dolarBlueValue} !"
                                     );
+                                    var numeros = new numeros();
+                                    numeros.countsms++;
                                 }
 
-                                await Task.Delay(TimeSpan.FromMinutes(1));
+                                
                             }
                             
                         }
 
-
+                     await Task.Delay(TimeSpan.FromMinutes(1));
                     }
                     catch (Exception ex)
                     {

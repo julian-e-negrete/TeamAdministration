@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Team" Language="C#" MasterPageFile="~/Site.Master"  EnableEventValidation="false" AutoEventWireup="true" CodeBehind="Team.aspx.cs" Inherits="WebForm_CSharp.Team" %>
+﻿<%@ Page Title="Team" Language="C#"  Async="true" MasterPageFile="~/Site.Master"  EnableEventValidation="false" AutoEventWireup="true" CodeBehind="Team.aspx.cs" Inherits="WebForm_CSharp.Team" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
 
@@ -56,5 +56,5 @@
                 
                 </asp:GridView>
             </div>
-    
+    </main>
 </asp:Content>

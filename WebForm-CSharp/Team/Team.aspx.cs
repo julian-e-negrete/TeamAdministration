@@ -8,13 +8,25 @@ using System.Web.UI.WebControls;
 using WebForm_CSharp.Utils; // Import the namespace where 'datos' class is defined
 
 
+// Twilio
+using System.Collections.Generic;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
+
+using System.Net.Http;
+using System.Linq;
+using System.Text.Json;
+//using Newtonsoft.Json;
 
 namespace WebForm_CSharp
 {
     public partial class Team : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
             string ID = Session["userID"] as string;
 
             if (ID != null)
@@ -22,7 +34,9 @@ namespace WebForm_CSharp
 
                 try
                 {
+
                     int number = int.Parse(ID);
+
                     GetTeamAll(number);
 
                 }
@@ -35,9 +49,10 @@ namespace WebForm_CSharp
 
             }
         }
+        
 
 
-         protected void GetTeamAll(int ID){
+        protected void GetTeamAll(int ID){
         
             DataTable dt = new DataTable();
             datos  datosInstance = new datos (); // Create an instance of the Datos class
@@ -60,13 +75,15 @@ namespace WebForm_CSharp
             ScriptManager.RegisterStartupScript(this, GetType(), "AlertScript", script, true);
         }
 
-
+        
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             Response.Redirect($"UserSearch.aspx");
-            
-            
+
         }
+
+
+
 
         protected void btnCreate_Click(object sender, EventArgs e)
         {
